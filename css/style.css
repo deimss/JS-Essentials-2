@@ -1,0 +1,13 @@
+body {
+  background-image: url(../images/pinkdust.png);
+  background-repeat: repeat;
+
+}
+
+.center-field {
+  font-style: normal;
+  font-family: serif;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
