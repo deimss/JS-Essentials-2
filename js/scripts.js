@@ -82,21 +82,39 @@ codeWhile();
 function number100(){
   console.log('Завдання з prompt');
 		var i = prompt("Type number bigger than 100!");
-		while (i < 101){
-			i = prompt("Type number bigger than 100!");
-		}
-    console.log('Number is ' +i);
+    if (isNaN(i) === false){
+      while (i < 101 || isNaN(i) ){
+      i = prompt("Type number bigger than 100!");
+      }
+    }
+    else if (isNaN(i)){
+      while (isNaN(i) || i < 101){
+      i = prompt("Type number bigger than 100!");
+       }
+      }
+  console.log('Number is ' + i);
 }
 number100();
 
 //Task 9
-function number100d0While(){
-    do{
+function number100do(){
+  console.log('Завдання з prompt');
+		var i = prompt("Type number bigger than 100!");
+    if (isNaN(i) === false){
+      do{
+        i = prompt("Type number bigger than 100!");
+      }
+      while (i < 101 || isNaN(i) )
+    }
+    else if (isNaN(i)){
+      do{
       i = prompt("Type number bigger than 100!");
-    }while (i < 101);
-    console.log('Number is ' + i);
+      }
+      while (isNaN(i) || i < 101)
+      }
+  console.log('Number is ' + i);
 }
-number100d0While();
+number100do();
 
 //Task 10
 function showFor (){
@@ -108,5 +126,3 @@ function showFor (){
  }
 }
 showFor();
-
-//Task 7
